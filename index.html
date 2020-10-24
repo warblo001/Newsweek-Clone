@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
   <title>Newsweek</title>
 </head>
 
@@ -15,18 +16,21 @@
 
   <header>
 
-    <title>
-      <div class="weather">
-        <span class="iconify" data-icon="mdi:weather-partly-cloudy" data-inline="false"></span>
-        <p>Fri, Oct 23, 2020</p>
+      <div class="top-title">
+
+        <div class="weather">
+          <h1><span class="iconify" data-icon="mdi:weather-partly-cloudy" data-inline="false"></span> 20° Terrassa, ES ></h1>
+          <p>Fri, Oct 23, 2020</p>
+        </div>
+      
+        <div class="logo">
+          <img src="assets/img/logo.jpg" alt="logo">
+        </div>
+
+        <div class="login">
+          <img src="assets/img/login.jpg" alt="login">
+        </div>
       </div>
-      <div class="logo">
-        <img src="assets/img/logo.jpg" alt="logo">
-      </div>
-      <div class="login">
-        <img src="assets/img/login.jpg" alt="login">
-      </div>
-    </title>
 
     <nav>
       <div class="nav-logo">
@@ -39,7 +43,6 @@
 
     <div class="first-nav">
       <img src="assets/img/logo.jpg" alt="logo">
-      </div>
       <div class="nav-login1">
         <img src="assets/img/login3.jpg" alt="login">
       </div>
@@ -59,7 +62,9 @@
         <li>Vantage</li>
         <li>Weather</li>
       </ul>
-      <input type="search"><span class="iconify" data-icon="ei:search" data-inline="false"></span>
+      <input type="search" placeholder="Search">
+      <span class="iconify" data-icon="ei:search" data-inline="false"></span>
+      <img src="assets/img/pestaña.jpg" alt="s">
     </div>
 
     <div class="nav3">
@@ -78,9 +83,9 @@
 
   <main>
     <section>
-      <div class="container my-container">
+      <div class="container-fluid my-container">
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col justify-content-space-between my-col1">
 
             <h1>FEATURED STORIES</h1>
 
@@ -171,7 +176,7 @@
             </div>
           </div>
 
-          <div class="col my-col">
+          <div class="col-5 my-col2">
             <h1>TOP STORY</h1>
 
             <div class="top-story">
@@ -224,7 +229,7 @@
               </div>
             </div>
 
-            <div class="more-stories">
+            <div class="more-stories sticky-top">
 
               <h1>MORE STORIES</h1>
 
@@ -303,23 +308,23 @@
             </div>
           </div>
 
-          <div class="col my-col">
+          <div class="col my-col3">
 
+            <h1>THE DEBATE</h1>
             <div class="the-debate">
-
-              <h1>THE DEBATE</h1>
               <div class="debate">
-                <img src="assets/img/abigail-shrier.webp" alt="abigail">
-                <h1>The Transgender Threat to Women's Sports</h1>
-                <h2>BY <span>ABIGAIL SHRIER</span></h2>
-                <p>VS</p>
+                <img src="assets/img/abigail-shrier.webp" alt="abigail" class="abigail">
+                <h1>The Transgender Threat to Women's Sports
+                <br>
+                <span class="by">BY </span><span class="abtext">ABIGAIL SHRIER</span></h1>
+                <span class="vs"><img src="assets/img/vs.jpg" alt=""><p></p></span>
                 <h1>Transgender Athletes Do Not Threaten Women's Sports</h1>
-                <h2>BY <span>JULIET JACQUES</span></h2>
-                <img src="assets/img/juliet-jacques.webp" alt="juliet">
+                <h2>BY <span class="julietext">JULIET JACQUES</span></h2>
+                <img src="assets/img/juliet-jacques.webp" alt="juliet" class="juliet">
               </div>
             </div>
 
-            <div class="opinion">
+            <div class="opinion sticky-top">
 
               <h1>OPINION</h1>
               <div class="op-artircle">
@@ -358,7 +363,7 @@
                 <h3>BY YONI MICHANIE</h3>
               </div>
 
-              <div class="op-artircle">
+              <div class="op-artircle last-art">
                 <img src="assets/img/yoni-michanie.webp" alt="yoni">
                 <h2>Assad's Syria Is Not Ready for International Rehabilitation</h2>
                 <h3>BY YONI MICHANIE</h3>
@@ -413,7 +418,6 @@
                 <p>75% of Roofstock users are first-time real estate investors, and more than half are under 35.</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -492,28 +496,28 @@
 
         <div class="row my-row">
 
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
             <p>At one point, the driving comes face-to-face with a bear looking through his windshield.</p>
           </div>
 
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
             <p>At one point, the driving comes face-to-face with a bear looking through his windshield.</p>
           </div>
 
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
             <p>At one point, the driving comes face-to-face with a bear looking through his windshield.</p>
           </div>
 
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
@@ -523,28 +527,28 @@
 
         <div class="row my-row">
         
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
             <p>At one point, the driving comes face-to-face with a bear looking through his windshield.</p>
           </div>
         
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
             <p>At one point, the driving comes face-to-face with a bear looking through his windshield.</p>
           </div>
         
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
             <p>At one point, the driving comes face-to-face with a bear looking through his windshield.</p>
           </div>
         
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/polar-bear-arctic-getty-stock.webp" alt="polar">
             <h1>TECH & SCIENCE</h1>
             <h2>'Hungry' Polar Bears Surround Garbage Truck With Driver Inside in Video</h2>
@@ -558,17 +562,17 @@
       <div class="container last-articles">
         <h1>Tech & Science</h1>
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
 
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
 
-          <div class="col my-col">
+          <div class="col ed-col">
 
             <div class="tesla">
               <img src="assets/img/tesla.webp" alt="tesla">
@@ -591,17 +595,17 @@
       <div class="container last-articles">
         <h1>Tech & Science</h1>
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
       
             <div class="tesla">
               <img src="assets/img/tesla.webp" alt="tesla">
@@ -624,17 +628,17 @@
       <div class="container last-articles">
         <h1>Tech & Science</h1>
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
       
             <div class="tesla">
               <img src="assets/img/tesla.webp" alt="tesla">
@@ -657,17 +661,17 @@
       <div class="container last-articles">
         <h1>Tech & Science</h1>
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
       
             <div class="tesla">
               <img src="assets/img/tesla.webp" alt="tesla">
@@ -690,17 +694,17 @@
       <div class="container last-articles">
         <h1>Tech & Science</h1>
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
       
             <div class="tesla">
               <img src="assets/img/tesla.webp" alt="tesla">
@@ -723,17 +727,17 @@
       <div class="container last-articles">
         <h1>Tech & Science</h1>
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
             <img src="assets/img/shark.webp" alt="shark">
             <p>Surfer Says Shark Bit Him During Encounter That 'Was Like the Movie Jaws'</p>
           </div>
       
-          <div class="col my-col">
+          <div class="col ed-col">
       
             <div class="tesla">
               <img src="assets/img/tesla.webp" alt="tesla">
