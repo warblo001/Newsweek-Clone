@@ -73,6 +73,10 @@ nav {
   z-index: 2;
   width: 100%;
   max-width: 1330px;
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .nav-logo{
@@ -85,8 +89,21 @@ nav {
 .nav-login1 {
   padding-top: 10px;
 }
+
 .first-nav {
   display: none;
+  justify-content: space-between;
+  height: 55px;
+  background: $thered;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: 1330px;
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .nav2 {
@@ -238,7 +255,7 @@ nav {
   }
 }
 
-.sponsored {
+.sponsored, .sponsored1 {
   margin-bottom: 30px;
 
   h2{ 
@@ -564,17 +581,25 @@ nav {
   }
 }
 
+.in-them {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+  margin-bottom: 30px;
+  height: auto;
+}
+
 .grid-col1 {
   cursor: pointer;
 
   h5{ 
-    width: 70%;
+    width: 80%;
     background: rgb(211, 211, 211);
     opacity: 90%;
     color: $thered;
     display: flex;
     justify-content: center;
-    margin-top: -32px;
+    margin-top: -31px;
     font-size: 19px;
     padding: 5px 10px 5px 10px;
   }
@@ -594,16 +619,11 @@ nav {
   }
 }
 
-.in-them {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1300px;
-  margin-bottom: 30px;
-}
-
 .my-col {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 
   img {
     height: 70%;
@@ -616,10 +636,9 @@ nav {
     background: $thered;
     font-size: 16px;
     color: white;
-    width: 30%;
-    height: 26px;
+    width: 40%;
+    text-align: center;
     padding-top: 5px;
-    padding-left: 5px;
     font-weight: bold;
   }
 
@@ -627,7 +646,6 @@ nav {
     color: $thered;
     font-size: 16px;
     width: 30%;
-    height: 26px;
     padding-top: 5px;
     padding-left: 5px;
     font-weight: bold;
@@ -653,6 +671,7 @@ nav {
 .ed-col {
   cursor: pointer;
   margin-bottom: 30px;
+
   h1 { 
     width: 70%;
     background: rgb(211, 211, 211);
@@ -704,6 +723,19 @@ nav {
     cursor: pointer;
   }
 
+  h2{ 
+    width: 50%;
+    background: rgb(211, 211, 211);
+    opacity: 95%;
+    color: $thered;
+    display: flex;
+    justify-content: center;
+    margin-top: -32px;
+    font-size: 19px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+  }
+
   p {
     font-size: 22px;
     font-weight: bold;
@@ -719,18 +751,19 @@ nav {
   display: flex;
   border-bottom: 1px solid lightgrey;
   padding-top: 10px;
+
   img {
     margin-bottom: 10px;
   }
 
-  h2 {
+  h4 {
     font-size: 17px;
     font-weight: bold;
     width: 70%;
     margin-left: 15px;
   }
 
-  h2:hover {
+  h4:hover {
     text-decoration: $thered underline;
     cursor: pointer;
   }
@@ -875,7 +908,7 @@ nav {
 }
 
 .footer-icons{
-  width: 15%;
+  width: 20%;
   font-size: 26px;
   color: #706d6e;
 
@@ -970,12 +1003,223 @@ nav {
   }
 }
 
-@media (min-width:1101px) and (max-width:1260px) {
-  .my-col1, .my-col2 {
-    max-width: 466px;
+@media (min-width:768px) and (max-width: 992px) {
+
+
+  .footer-icons {
+    width: 25%;
+  }
+  
+  .sub-news-cont {
+    height: 700px;
+    flex-wrap: wrap;
+  }
+
+  .sub-news-title {
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    h2 {
+      position: absolute;
+      top: 370px;
+    }
+  }
+
+  .suscribe {
+    width: 95%;
+  }
+
+  .newsletter {
+    width: 95%;
+    margin: 0 auto;
+    height: 200px;
+    background: url(/assets/img/starting5-homepage.png) no-repeat;
+    background-position: -10%;
+    margin-top: -100px;
+
+    img {
+      width: 50%;
+      visibility: hidden;
+    }
+
+    input{
+      width: 35%;
+      margin-left: 10px;
+    }
+
+    button {
+      width: 35%;
+      padding-left: 10px;
+    }
+  }
+
+  .news-text { 
+    width: 60%;
+    height: 200px;
+    text-align: center;
+
+    h1 {
+      margin-top: 10px;
+    }
+
+    h2 {
+      margin-top: -20px;
+    }
+  }
+
+  .ed-col1{
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .ed-col {
+    h1 {
+      width: 45%;
+    }
+  }
+
+  .in-them {
+    height: 650px;
+  }
+
+  .grid-col1 {
+    h5{
+      width: 100%;
+      font-size: 18px;
+      margin-top: -30px;
+    }
+
+    h6 {
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  .my-col {
+    h1 {
+      width: 50%;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  .sponsored {
+    max-width: 330px;
     margin: 0 auto;
   }
-}
-//@media (min-width:992px) and (max-width: 1099px)
 
-//@media (min-width:768px) and (max-width:991px)
+  .form {
+    max-width: 330px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:767px) {
+  header{
+    height: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .first-nav {
+    display: flex;
+
+    img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .top-title, .nav2, .nav3 {
+    display: none;
+  }
+
+
+  .footer-title {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+
+    h1 {
+      padding: 0;
+      padding-top: 10px;
+    }
+  }
+
+  .footer-icons {
+    width: 25%;
+  }
+  
+  .sub-news-cont {
+    height: 800px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .sub-news-title {
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    h2 {
+      position: absolute;
+      top: 370px;
+    }
+  }
+
+  .suscribe {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    width: 95%;
+    margin: 0 auto;
+    height: 410px;
+    background: url(/assets/img/starting5-homepage.png) no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+
+    img {
+      display: none;
+    }
+
+    input{
+      width: 48%;
+      margin-left: 10px;
+    }
+
+    button {
+      width: 48%;
+      padding-left: 10px;
+    }
+  }
+
+  .news-text { 
+    width: 100%;
+    height: 200px;
+    text-align: center;
+
+    h1 {
+      margin-top: 10px;
+    }
+
+    h2 {
+      width: 100%;
+      margin-top: -20px;
+    }
+  }
+}
