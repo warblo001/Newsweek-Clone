@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  z-index: 2;
+  z-index: 3;
   position: relative;
 }
 
@@ -70,8 +70,9 @@ nav {
   background: $thered;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
+  max-width: 1330px;
 }
 
 .nav-logo{
@@ -95,7 +96,7 @@ nav {
   height: 50px;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   background: white;
 
   ul {
@@ -149,7 +150,7 @@ nav {
 
 .my-col2, .my-col3 {
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .nav3 {
@@ -186,7 +187,6 @@ nav {
 .my-container {
   width: 100%;
   max-width: 1300px;
-  height: 4820px;
   padding: 20px;
 
   h1 {
@@ -204,6 +204,7 @@ nav {
 
 .featured-stories, .top-story {
   margin-bottom: 20px;
+  width: 100%;
 
   h2{ 
     width: 15%;
@@ -320,7 +321,7 @@ nav {
 
 .ms-article {
   margin-top: 10px;
-  height: 105px;
+  //height: 105px;
   width: 100%;
   border-top: 1px solid lightgray;
   padding-top: 10px;
@@ -337,7 +338,6 @@ nav {
     font-size: 17px;
     font-weight: bold;
     width: 90%;
-    height: 45px;
   }
 
   h2:hover {
@@ -392,6 +392,7 @@ nav {
 
   h2 {
     width: 50%;
+    margin-top: 10px;
   }
 
   p {
@@ -716,7 +717,6 @@ nav {
 
 .tesla {
   display: flex;
-  flex-wrap: wrap;
   border-bottom: 1px solid lightgrey;
   padding-top: 10px;
   img {
@@ -805,17 +805,15 @@ nav {
   height: 317px;
   border: 1px solid lightgrey;
   display: flex;
-  flex-wrap: wrap;
-
-  
 }
 
 .news-text {
   width: 53%;
+  height: 317px;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 10px 30px 30px;
-  
+  justify-content: center;
+  align-items: center;
 
   h1{
     font-size: 24px;
@@ -854,7 +852,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
   border-bottom: 1px solid lightgray;
 }
 
@@ -894,7 +892,8 @@ nav {
   display: flex;
   align-items: center;
   margin: 5px auto;
-  padding: 0 20px;
+  padding: 0 10px;
+  position: relative;
 
   h1{
     font-size: 14px;
@@ -924,16 +923,19 @@ nav {
     color: #666;
     padding: 0 10px;
   }
+}
 
-
+.footer-links-cont {
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 .footer-links {
   width: 90%;
-  max-width: 1330px;
   height: 54px;
   display: flex;
-  margin: 0 20px 30px 20px;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
 
@@ -941,6 +943,7 @@ nav {
     font-size: 14px;
     color: #666;
     padding-right: 10px;
+    
   }
   
   p::after {
@@ -955,3 +958,24 @@ nav {
     cursor: pointer;
   }
 }
+
+@media (max-width:1100px) {
+
+  header{
+    height: 50px;
+  }
+
+  .top-title, .nav2, .nav3 {
+    display: none;
+  }
+}
+
+@media (min-width:1101px) and (max-width:1260px) {
+  .my-col1, .my-col2 {
+    max-width: 466px;
+    margin: 0 auto;
+  }
+}
+//@media (min-width:992px) and (max-width: 1099px)
+
+//@media (min-width:768px) and (max-width:991px)
