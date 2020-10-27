@@ -4,12 +4,25 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-body a{
-color: black;
+body a {
+  color: black;
 }
 
-body a:hover{
-color: black;
+.footer-links a {
+  font-size: 14px;
+  color: #666;
+  padding-right: 10px;
+}
+
+.footer-icons a {
+  width: 20%;
+  font-size: 26px;
+  color: #706d6e;
+  padding-right: 5px;
+}
+
+body a:hover {
+  color: black;
 }
 
 header {
@@ -82,7 +95,7 @@ header {
 }
 
 .my-nav {
-  background-color: #f72210 ;
+  background-color: #f72210;
   justify-content: space-between;
   height: 50px;
   max-width: 1330px;
@@ -115,7 +128,7 @@ header {
   font-weight: bold;
 }
 
-.btn-cont{
+.btn-cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +182,7 @@ header {
   font-weight: bold;
 }
 
-.lan:hover{
+.lan:hover {
   background: white;
   cursor: text;
 }
@@ -987,7 +1000,7 @@ nav img {
   font-weight: bold;
 }
 
-.footer-links p, .footer-links a {
+.footer-links p {
   font-size: 14px;
   color: #666;
   padding-right: 10px;
@@ -1141,13 +1154,6 @@ nav img {
   cursor: pointer;
 }
 
-.footer-icons a{
-  width: 20%;
-  font-size: 26px;
-  color: #706d6e;
-  padding-right: 5px;
-}
-
 .footer-icons .iconify:hover {
   color: #3b5998;
   cursor: pointer;
@@ -1220,7 +1226,7 @@ nav img {
 .nav3-a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #F72210;
+  color: #f72210;
 }
 
 .nav2-a:hover {
