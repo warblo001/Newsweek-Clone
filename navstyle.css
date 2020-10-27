@@ -1,0 +1,86 @@
+.my-nav {
+  background-color: #f72210 ;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.navbar-brand {
+  margin-top: -8px;
+}
+
+.login-butn {
+  font-size: 18px;
+  background: #f72210;
+  border: none;
+}
+
+.subscribe-butn {
+  font-size: 18px;
+  background: #ffe400;
+  border: none;
+  height: 30px;
+  width: 126px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.btn-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 40px;
+  margin-top: -3px;
+}
+
+.nav-btn {
+  font-size: 40px;
+  padding: 10px;
+  height: 40px;
+  background: #f72210;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(233, 230, 230, 0.747);
+  
+}
+
+.nav-btn:hover {
+  background: #f72210;
+  border: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.lin {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.lin:hover {
+  background: black;
+  color: white;
+}
+
+.navinpt {
+  border: none;
+  width: 170px;
+  margin-left: 20px;
+}
+
+.iconify-sp {
+  font-size: 30px;
+}
+
+.len {
+  font-size: 18px;
+  color: #807f84;
+}
+
+.len:hover {
+  color: #f72210;
+  background: white;
+}

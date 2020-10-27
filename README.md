@@ -5,7 +5,7 @@
 This is a project for Microverse program which consist on cloning Newsweek site using bootstrap and frontend techniques.
 
 
-![screenshot](assets/img/screenshot.jpg)
+![screenshot](/assets/img/screenshot.jpg)
 
 ## Newsweek Clone with the following features:
 

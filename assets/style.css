@@ -4,6 +4,14 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+body a{
+color: black;
+}
+
+body a:hover{
+color: black;
+}
+
 header {
   width: 100%;
   height: 200px;
@@ -62,34 +70,118 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .logo {
   cursor: pointer;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+.my-nav {
+  background-color: #f72210 ;
   justify-content: space-between;
-  height: 55px;
-  background: #f72210;
+  height: 50px;
+  max-width: 1330px;
+  z-index: 2;
   position: fixed;
   top: 0;
-  z-index: 2;
   width: 100%;
-  max-width: 1330px;
+}
+
+.navbar-brand {
+  margin-top: -8px;
+}
+
+.login-butn {
+  font-size: 18px;
+  background: #f72210;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.subscribe-butn {
+  font-size: 18px;
+  background: #ffe400;
+  border: none;
+  height: 30px;
+  width: 126px;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.btn-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 40px;
+  margin-top: -3px;
+}
+
+.nav-btn {
+  font-size: 40px;
+  padding: 10px;
+  height: 40px;
+  background: #f72210;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(233, 230, 230, 0.747);
+}
+
+.nav-btn:hover {
+  background: #f72210;
+  border: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.lin {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.lin:hover {
+  background: black;
+  color: white;
+}
+
+.navinpt {
+  border: none;
+  width: 170px;
+  margin-left: 20px;
+}
+
+.iconify-sp {
+  font-size: 30px;
+}
+
+.lan {
+  font-weight: bold;
+}
+
+.lan:hover{
+  background: white;
+  cursor: text;
+}
+
+.len {
+  font-size: 18px;
+  color: #807f84;
+}
+
+.len:hover {
+  color: #f72210;
+  background: white;
 }
 
 nav img {
@@ -111,24 +203,6 @@ nav img {
 
 .nav-login1 {
   padding-top: 10px;
-}
-
-.first-nav {
-  display: none;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 55px;
-  background: #f72210;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 100%;
-  max-width: 1330px;
-}
-
-.first-nav img {
-  cursor: pointer;
 }
 
 .nav2 {
@@ -167,11 +241,13 @@ nav img {
   font-weight: 900;
   border-right: 1px solid lightgrey;
   margin-top: 2px;
+  color: black;
 }
 
 .nav2 li:hover {
   cursor: pointer;
   color: #f72210;
+  text-decoration: none;
 }
 
 .nav2 li:last-child {
@@ -246,16 +322,6 @@ nav img {
   padding-left: 30px;
   color: #897f84;
   font-weight: 700;
-}
-
-.nav3 li:hover {
-  color: #f72210;
-  cursor: pointer;
-}
-
-.nav3 li:first-child {
-  cursor: text;
-  color: black;
 }
 
 .my-container {
@@ -921,7 +987,7 @@ nav img {
   font-weight: bold;
 }
 
-.footer-links p {
+.footer-links p, .footer-links a {
   font-size: 14px;
   color: #666;
   padding-right: 10px;
@@ -1075,10 +1141,11 @@ nav img {
   cursor: pointer;
 }
 
-.footer-icons {
+.footer-icons a{
   width: 20%;
   font-size: 26px;
   color: #706d6e;
+  padding-right: 5px;
 }
 
 .footer-icons .iconify:hover {
@@ -1139,6 +1206,25 @@ nav img {
 .footer-links p:hover {
   color: black;
   cursor: pointer;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+.nav3-a {
+  color: #897f84;
+  font-weight: 700;
+}
+
+.nav3-a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #F72210;
+}
+
+.nav2-a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 1100px) {
@@ -1274,28 +1360,6 @@ nav img {
 @media (max-width: 767px) {
   header {
     height: 50px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .first-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .first-nav img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .top-title,
