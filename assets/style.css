@@ -21,6 +21,14 @@ body a {
   padding-right: 5px;
 }
 
+.nav2 a {
+  padding-right: 20px;
+  font-weight: 900;
+  border-right: 1px solid lightgrey;
+  margin-top: 2px;
+  color: black;
+}
+
 body a:hover {
   color: black;
 }
@@ -233,7 +241,7 @@ nav img {
   background: white;
 }
 
-.nav2 ul {
+.nav2-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,21 +257,13 @@ nav img {
   padding-top: 10px;
 }
 
-.nav2 li {
-  padding-right: 20px;
-  font-weight: 900;
-  border-right: 1px solid lightgrey;
-  margin-top: 2px;
-  color: black;
-}
-
-.nav2 li:hover {
+.nav2 a:hover {
   cursor: pointer;
   color: #f72210;
   text-decoration: none;
 }
 
-.nav2 li:last-child {
+.nav2 a:last-child {
   border: none;
 }
 
@@ -324,7 +324,7 @@ nav img {
   z-index: 2;
 }
 
-.nav3 ul {
+.nav3-ul {
   width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
